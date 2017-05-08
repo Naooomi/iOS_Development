@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oUQ-OT-Jxe">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--London Landmarks-->
+        <scene sceneID="Sn9-R7-hPH">
+            <objects>
+                <tableViewController id="3JV-Uq-bSl" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" id="y8y-yH-s5r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="88" id="Dj4-te-EO7" customClass="TableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="320" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dj4-te-EO7" id="fAT-3p-3AK">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigBen" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-do-DP5">
+                                            <rect key="frame" x="17" y="-21" width="110" height="95"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="LiD-do-DP5" secondAttribute="height" multiplier="22:19" id="9ub-r1-Zej"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtG-rh-4SB" customClass="TableView">
+                                            <rect key="frame" x="139" y="46" width="173" height="28"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vI-u8-a9Z" customClass="TableView">
+                                            <rect key="frame" x="139" y="0.0" width="173" height="28"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="top" secondItem="6vI-u8-a9Z" secondAttribute="bottom" constant="18" id="3lK-oa-gmz"/>
+                                        <constraint firstItem="6vI-u8-a9Z" firstAttribute="leading" secondItem="LiD-do-DP5" secondAttribute="trailing" constant="12" id="50j-FL-u3v"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="wtG-rh-4SB" secondAttribute="bottom" constant="5.5" id="9dp-2T-gRX"/>
+                                        <constraint firstItem="6vI-u8-a9Z" firstAttribute="trailing" secondItem="fAT-3p-3AK" secondAttribute="trailingMargin" id="CEs-a8-71w"/>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="width" secondItem="6vI-u8-a9Z" secondAttribute="width" id="Dnj-lI-dol"/>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="top" secondItem="6vI-u8-a9Z" secondAttribute="bottom" constant="18" id="G8O-xP-F8u"/>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="height" secondItem="6vI-u8-a9Z" secondAttribute="height" id="HDK-ww-Fo0"/>
+                                        <constraint firstItem="6vI-u8-a9Z" firstAttribute="top" secondItem="fAT-3p-3AK" secondAttribute="topMargin" constant="-8" id="LFo-nc-8PG"/>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="leading" secondItem="LiD-do-DP5" secondAttribute="trailing" constant="12" id="MWU-2t-MXA"/>
+                                        <constraint firstItem="LiD-do-DP5" firstAttribute="leading" secondItem="fAT-3p-3AK" secondAttribute="leadingMargin" constant="9" id="NVG-Xb-jyi"/>
+                                        <constraint firstItem="LiD-do-DP5" firstAttribute="top" secondItem="fAT-3p-3AK" secondAttribute="topMargin" constant="-29" id="Pil-sc-6YQ"/>
+                                        <constraint firstItem="LiD-do-DP5" firstAttribute="leading" secondItem="fAT-3p-3AK" secondAttribute="leadingMargin" constant="9" id="R0Z-tu-ZKo"/>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="trailing" secondItem="fAT-3p-3AK" secondAttribute="trailingMargin" id="Sqf-J5-rC5"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="LiD-do-DP5" secondAttribute="bottom" constant="5.5" id="V1L-z1-GDX"/>
+                                        <constraint firstItem="6vI-u8-a9Z" firstAttribute="top" secondItem="fAT-3p-3AK" secondAttribute="topMargin" constant="-8" id="Xr3-oz-rFV"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="wtG-rh-4SB" secondAttribute="bottom" constant="5.5" id="Zja-nq-I5E"/>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="trailing" secondItem="fAT-3p-3AK" secondAttribute="trailingMargin" id="aHS-fr-i8X"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="LiD-do-DP5" secondAttribute="bottom" constant="5.5" id="gdj-bk-UaZ"/>
+                                        <constraint firstItem="6vI-u8-a9Z" firstAttribute="trailing" secondItem="fAT-3p-3AK" secondAttribute="trailingMargin" id="kAm-Y1-IDz"/>
+                                        <constraint firstItem="wtG-rh-4SB" firstAttribute="leading" secondItem="LiD-do-DP5" secondAttribute="trailing" constant="12" id="l1I-gG-uun"/>
+                                        <constraint firstItem="6vI-u8-a9Z" firstAttribute="leading" secondItem="LiD-do-DP5" secondAttribute="trailing" constant="12" id="sbk-zD-9Yb"/>
+                                        <constraint firstItem="LiD-do-DP5" firstAttribute="top" secondItem="fAT-3p-3AK" secondAttribute="topMargin" constant="-29" id="t5d-F5-jw8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellDescription" destination="wtG-rh-4SB" id="RL1-IZ-AWM"/>
+                                    <outlet property="cellImageView" destination="LiD-do-DP5" id="8TH-a3-Lzt"/>
+                                    <outlet property="cellTitle" destination="6vI-u8-a9Z" id="RCJ-q6-b8v"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3JV-Uq-bSl" id="T31-KZ-q0Y"/>
+                            <outlet property="delegate" destination="3JV-Uq-bSl" id="4wl-DW-iq0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="London Landmarks" id="blR-P5-Mca"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6U-xS-wvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016.25" y="123.59154929577466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kBI-pO-1xw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oUQ-OT-Jxe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TTD-dr-pzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3JV-Uq-bSl" kind="relationship" relationship="rootViewController" id="tfH-2k-PmD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPS-aj-WBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BigBen" width="1000" height="567"/>
+    </resources>
+</document>
