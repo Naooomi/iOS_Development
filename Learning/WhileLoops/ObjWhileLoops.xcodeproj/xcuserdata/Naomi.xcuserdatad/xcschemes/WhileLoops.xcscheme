@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B395843C1F20BA710042F203"
-               BuildableName = "WhileLoops.app"
-               BlueprintName = "WhileLoops"
-               ReferencedContainer = "container:WhileLoops.xcodeproj">
+               BuildableName = "ObjWhileLoops.app"
+               BlueprintName = "ObjWhileLoops"
+               ReferencedContainer = "container:ObjWhileLoops.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B395843C1F20BA710042F203"
-            BuildableName = "WhileLoops.app"
-            BlueprintName = "WhileLoops"
-            ReferencedContainer = "container:WhileLoops.xcodeproj">
+            BuildableName = "ObjWhileLoops.app"
+            BlueprintName = "ObjWhileLoops"
+            ReferencedContainer = "container:ObjWhileLoops.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B395843C1F20BA710042F203"
-            BuildableName = "WhileLoops.app"
-            BlueprintName = "WhileLoops"
-            ReferencedContainer = "container:WhileLoops.xcodeproj">
+            BuildableName = "ObjWhileLoops.app"
+            BlueprintName = "ObjWhileLoops"
+            ReferencedContainer = "container:ObjWhileLoops.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B395843C1F20BA710042F203"
-            BuildableName = "WhileLoops.app"
-            BlueprintName = "WhileLoops"
-            ReferencedContainer = "container:WhileLoops.xcodeproj">
+            BuildableName = "ObjWhileLoops.app"
+            BlueprintName = "ObjWhileLoops"
+            ReferencedContainer = "container:ObjWhileLoops.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

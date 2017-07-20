@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WhileLoops.xcodeproj">
+      location = "self:ObjForLoops.xcodeproj">
    </FileRef>
 </Workspace>
