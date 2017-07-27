@@ -87,6 +87,12 @@
     
 }
 
+- (IBAction)customFont:(id)sender {
+    
+    [self.label2 setFont:[UIFont fontWithName:@"Outrunfuture" size:30]];
+    
+}
+
 
 
 

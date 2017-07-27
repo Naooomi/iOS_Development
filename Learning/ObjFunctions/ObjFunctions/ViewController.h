@@ -31,6 +31,7 @@
 - (IBAction)right:(id)sender;
 - (IBAction)center:(id)sender;
 
+- (IBAction)customFont:(id)sender;
 
 @end
 
