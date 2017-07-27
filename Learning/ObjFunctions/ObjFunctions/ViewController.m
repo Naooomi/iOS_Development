@@ -93,12 +93,6 @@
     
 }
 
-
-
-
-
-
-
 // How to dismiss keyboard on Text View
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     
