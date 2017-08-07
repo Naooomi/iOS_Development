@@ -11,7 +11,7 @@
 <br/><br/>
 
 ## 2. Digital Clock
-### Using NSTimer and set differnt attributes and constrains to disply clock with four text color and four background color  
+### Using NSTimer and set different attributes and constrains to disply clock with four text color and four background color  
 <br/><br/>
 <div>
 <div align="center">
