@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="EW2-WI-Thx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimonSays" translatesAutoresizingMaskIntoConstraints="NO" id="HII-rJ-181">
+                                <rect key="frame" x="16" y="20" width="343" height="229"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="UGM-vJ-Rfe">
+                                <rect key="frame" x="16" y="257" width="168" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="oqZ-gO-Kfd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fat-Y1-1Na">
+                                <rect key="frame" x="191" y="257" width="168" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="6CX-Qb-Hgt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simon Says" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="x40-SF-zrW">
+                                <rect key="frame" x="16" y="357" width="343" height="229"/>
+                                <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWy-ER-LsC">
+                                <rect key="frame" x="16" y="594" width="343" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="vy2-go-MfJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DlB-Ix-qy0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GWy-ER-LsC" secondAttribute="bottom" constant="20" id="0GT-lB-vGf"/>
+                            <constraint firstItem="x40-SF-zrW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Z0-KX-pn1"/>
+                            <constraint firstItem="x40-SF-zrW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AMb-x6-Xrz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EW2-WI-Thx" secondAttribute="bottom" id="CXw-AG-w0S"/>
+                            <constraint firstItem="x40-SF-zrW" firstAttribute="top" secondItem="UGM-vJ-Rfe" secondAttribute="bottom" constant="8" id="HBa-9t-1on"/>
+                            <constraint firstItem="x40-SF-zrW" firstAttribute="height" secondItem="HII-rJ-181" secondAttribute="height" id="Mt3-Sn-fkQ"/>
+                            <constraint firstItem="HII-rJ-181" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TLk-u9-l1h"/>
+                            <constraint firstItem="UGM-vJ-Rfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VNk-I0-Xzh"/>
+                            <constraint firstItem="HII-rJ-181" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bEM-cc-xg8"/>
+                            <constraint firstItem="UGM-vJ-Rfe" firstAttribute="top" secondItem="HII-rJ-181" secondAttribute="bottom" constant="8" id="btO-50-wv6"/>
+                            <constraint firstItem="Fat-Y1-1Na" firstAttribute="width" secondItem="UGM-vJ-Rfe" secondAttribute="width" id="dz1-Es-zZs"/>
+                            <constraint firstItem="GWy-ER-LsC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fMS-k7-LqN"/>
+                            <constraint firstItem="HII-rJ-181" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="feW-l6-1Ge"/>
+                            <constraint firstItem="Fat-Y1-1Na" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g6d-xS-Xcm"/>
+                            <constraint firstItem="x40-SF-zrW" firstAttribute="top" secondItem="Fat-Y1-1Na" secondAttribute="bottom" constant="8" id="iEE-fy-zID"/>
+                            <constraint firstItem="Fat-Y1-1Na" firstAttribute="leading" secondItem="UGM-vJ-Rfe" secondAttribute="trailing" constant="7" id="ieN-7e-Q3O"/>
+                            <constraint firstItem="x40-SF-zrW" firstAttribute="width" secondItem="HII-rJ-181" secondAttribute="width" id="lDC-mO-FYD"/>
+                            <constraint firstItem="GWy-ER-LsC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nCV-Ie-PN3"/>
+                            <constraint firstItem="Fat-Y1-1Na" firstAttribute="top" secondItem="HII-rJ-181" secondAttribute="bottom" constant="8" id="pAY-HE-Msa"/>
+                            <constraint firstItem="EW2-WI-Thx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tiX-yK-TVj"/>
+                            <constraint firstItem="EW2-WI-Thx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="u7j-n9-uBl"/>
+                            <constraint firstItem="GWy-ER-LsC" firstAttribute="top" secondItem="x40-SF-zrW" secondAttribute="bottom" constant="8" id="x5O-mh-owp"/>
+                            <constraint firstAttribute="trailing" secondItem="EW2-WI-Thx" secondAttribute="trailing" id="zOc-Ar-ehR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="x40-SF-zrW" id="cIi-an-Q29"/>
+                        <outlet property="scoreLabel" destination="Fat-Y1-1Na" id="yzA-IT-rlQ"/>
+                        <outlet property="startGameButton" destination="GWy-ER-LsC" id="wFq-5u-Kna"/>
+                        <outlet property="timeLabel" destination="UGM-vJ-Rfe" id="KWe-yh-73Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1920" height="1200"/>
+        <image name="SimonSays" width="1000" height="707"/>
+    </resources>
+</document>
