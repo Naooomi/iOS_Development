@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    locationManager = [[CLLocationManager alloc] init];
+    self.mapView.delegate = self;
+    locationManager.delegate = self;
+    
 }
 
 
@@ -47,5 +52,13 @@
 }
 
 - (IBAction)locateMe:(id)sender {
+    
+    [locationManager requestWhenInUseAuthorization];
+    [locationManager requestAlwaysAuthorization];
+    
+    [locationManager startUpdatingLocation];
+    
+    self.mapView.showsUserLocation = YES;
+    
 }
 @end
