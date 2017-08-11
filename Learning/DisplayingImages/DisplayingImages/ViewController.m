@@ -28,7 +28,7 @@
 
 - (IBAction)showImage:(id)sender {
     
-    self.imageView.image = [UIImage imageNamed:@"Dog.jpg"];
+    self.imageView.image = [UIImage imageNamed:@"Dog.jpg "];
     
     
 }
