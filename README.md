@@ -59,6 +59,15 @@
 </div>
 <br/><br/>
 
+## 8. Web View App
+### Using NSTimer, Activity Indicator View, Toolbar and Flexible Space Bar Button Item to represent Apple website
+<br/><br/>
+<div align="center">
+<img src="https://github.com/Naooomi/iOS_Development/blob/master/Practices/WebViewApp/WebViewApp.jpg" height="500">
+</div>
+<br/><br/>
+
+
 
 
 
